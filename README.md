@@ -26,3 +26,6 @@ Ce projet implémente une solution d'hébergement mutualisé pour plusieurs site
 pip install flask
 pip install sqlalchemy
 pip install mysql.connector
+pip install faker
+pip install subprocess
+pip install socket
