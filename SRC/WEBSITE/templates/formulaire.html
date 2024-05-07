@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersécurité et Réseaux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>OVH</h1>
+    </header>
+    <main>
+        <!-- Vos sections existantes ici -->
+        <section id="formulaire-inscription">
+            <h2>Inscription</h2>
+            <form action="/submit" method="post">
+    <!-- Champs du formulaire ici -->
+</form>
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required>
+
+                <label for="domaine">Nom de domaine:</label>
+                <input type="text" id="domaine" name="domaine" required>
+
+                <label for="espace-disque">Besoin en espace disque:</label>
+                <input type="text" id="espace-disque" name="espace-disque" required>
+
+                <label for="trafic">Trafic attendu:</label>
+                <input type="text" id="trafic" name="trafic" required>
+
+                <label for="bande-passante">Besoins en bande passante:</label>
+                <input type="text" id="bande-passante" name="bande-passante" required>
+
+                <label for="admins">Nombres d’administrateur:</label>
+                <input type="number" id="admins" name="admins" required>
+
+                <label for="email">Adresse email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Mots de passe:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="second-admin">Deuxième administrateur:</label>
+                <input type="text" id="second-admin" name="second-admin">
+
+                <input type="submit" value="Soumettre">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 GROUPE SISR</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+<style type="text/css">body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f7ff;
+}
+
+header, footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #b3d9ff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+section {
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #007bff;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    background-color: #4d94ff;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #1a75ff;
+}
+</style>
+<script type="text/javascript">document.addEventListener("DOMContentLoaded", function() {
+    const formulaire = document.querySelector("form");
+    
+    formulaire.addEventListener("submit", function(e) {
+        e.preventDefault(); // Empêche l'envoi du formulaire
+        
+        // Récupère les valeurs des champs du formulaire
+        const nom = document.getElementById('nom').value;
+        const prenom = document.getElementById('prenom').value;
+        const domaine = document.getElementById('domaine').value;
+        const espaceDisque = document.getElementById('espace-disque').value;
+        const trafic = document.getElementById('trafic').value;
+        const bandePassante = document.getElementById('bande-passante').value;
+        const admins = document.getElementById('admins').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const secondAdmin = document.getElementById('second-admin').value;
+        
+        // Affiche les valeurs dans la console
+        console.log(`Nom: ${nom}`);
+        console.log(`Prénom: ${prenom}`);
+        console.log(`Nom de domaine: ${domaine}`);
+        console.log(`Besoin en espace disque: ${espaceDisque}`);
+        console.log(`Trafic attendu: ${trafic}`);
+        console.log(`Besoins en bande passante: ${bandePassante}`);
+        console.log(`Nombres d’administrateur: ${admins}`);
+        console.log(`Adresse email: ${email}`);
+        console.log(`Mot de passe: ${password}`);
+        console.log(`Deuxième administrateur: ${secondAdmin}`);
+    });
+});
+</script>
+</html>
